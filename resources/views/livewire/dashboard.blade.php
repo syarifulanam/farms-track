@@ -17,7 +17,7 @@
 
     <h2>Section title</h2>
     <div class="table-responsive">
-        <table class="table table-striped table-sm">
+        <table class="table table-striped table-sm table-success">
             <thead>
                 <tr>
                     <th scope="col">#</th>

@@ -1,73 +1,102 @@
     <div class="position-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                    <span data-feather="home"></span>
+                <a class="nav-link {{ request()->is('dashboard') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/dashboard">
+                    <i class="bi bi-speedometer2 me-2"></i>
                     Dashboard
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file"></span>
-                    Orders
+                <a class="nav-link {{ request()->is('growth-records') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/growth-records">
+                    <i class="bi bi-graph-up me-2"></i>
+                    Growth Records
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="shopping-cart"></span>
-                    Products
+                <a class="nav-link {{ request()->is('health-records') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/health-records">
+                    <i class="bi bi-journal-medical me-2"></i>
+                    Health Records
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
-                    Customers
+                <a class="nav-link {{ request()->is('vaccination') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/vaccination">
+                    <i class="bi bi-syringe me-2"></i>
+                    Vaccination
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="bar-chart-2"></span>
-                    Reports
+                <a class="nav-link {{ request()->is('feeding-records') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/feeding-records">
+                    <i class="bi bi-egg-fried me-2"></i>
+                    Feeding Records
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="layers"></span>
-                    Integrations
+                <a class="nav-link {{ request()->is('breeding') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/breeding">
+                    <i class="bi bi-people me-2"></i>
+                    Breeding
                 </a>
             </li>
-        </ul>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('off-springs') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/off-springs">
+                    <i class="bi bi-baby me-2"></i>
+                    Off Springs
+                </a>
+            </li>
 
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-                <span data-feather="plus-circle"></span>
-            </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-success">
+                <span>Farm Management</span>
+            </h6>
+
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Current month
+                <a class="nav-link {{ request()->is('sales') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/sales">
+                    <i class="bi bi-currency-dollar me-2"></i>
+                    Sales
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('farms') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/farms">
+                    <i class="bi bi-tractor me-2"></i>
+                    Farms
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Last quarter
+                <a class="nav-link {{ request()->is('cages') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/cages">
+                    <i class="bi bi-grid-3x3-gap me-2"></i>
+                    Cages
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Social engagement
+                <a class="nav-link {{ request()->is('animals') ? 'fw-bold text-success' : 'text-success' }}"
+                    href="/animals">
+                    <i class="bi bi-cow me-2"></i>
+                    Animals
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Year-end sale
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-success">
+                <span>General Settings</span>
+                <a class="link-success" href="#" aria-label="Add a new report">
+                    <i class="bi bi-plus-circle"></i>
                 </a>
-            </li>
-        </ul>
+            </h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('users') ? 'fw-bold text-success' : 'text-success' }}"
+                        href="/users">
+                        <i class="bi bi-people"></i>
+                        Users
+                    </a>
+                </li>
+            </ul>
     </div>
