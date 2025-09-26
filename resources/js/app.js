@@ -7,6 +7,7 @@ import "../css/dashboard.css";
 
 // 3. JS Library tambahan (bootstrap, alpine, dll)
 import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../js/dashboard";
 import feather from "feather-icons";
 import Chart from "chart.js/auto";

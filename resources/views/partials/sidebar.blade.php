@@ -24,14 +24,14 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('vaccination') ? 'fw-bold text-success' : 'text-success' }}"
                     href="/vaccination">
-                    <i class="bi bi-syringe me-2"></i>
+                    <i class="bi bi-capsule me-2"></i>
                     Vaccination
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('feeding-records') ? 'fw-bold text-success' : 'text-success' }}"
                     href="/feeding-records">
-                    <i class="bi bi-egg-fried me-2"></i>
+                    <i class="bi bi-egg me-2"></i>
                     Feeding Records
                 </a>
             </li>
@@ -45,7 +45,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('off-springs') ? 'fw-bold text-success' : 'text-success' }}"
                     href="/off-springs">
-                    <i class="bi bi-baby me-2"></i>
+                    <i class="bi bi-person-fill me-2"></i>
                     Off Springs
                 </a>
             </li>
@@ -65,7 +65,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('farms') ? 'fw-bold text-success' : 'text-success' }}"
                     href="/farms">
-                    <i class="bi bi-tractor me-2"></i>
+                    <i class="bi bi-truck me-2"></i>
                     Farms
                 </a>
             </li>
@@ -79,7 +79,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('animals') ? 'fw-bold text-success' : 'text-success' }}"
                     href="/animals">
-                    <i class="bi bi-cow me-2"></i>
+                    <i class="bi bi-bug me-2"></i>
                     Animals
                 </a>
             </li>
